@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="login-intro">
+      quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat
+      sed cras ornare arcu dui vivamus arcu felis bibendum
+    </h1>
+    <h1 class="login-intro">Sign up now to get started</h1>
+
+    <h1 class="login-intro">You know you want to.</h1>
+
+    <div class="form-section">
+      <h1 class="login-form-title">Let's do this!</h1>
+      <form id="loginForm" class="login-form">
+        <div class="login-form-firstname">
+          <label for="firstName">First Name</label>
+          <input id="firstName" type="text" name="firstName" required />
+        </div>
+        <div class="login-form-lastname">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" type="text" name="lastName" required />
+        </div>
+        <div class="login-form-email">
+          <label for="mail">Email</label>
+          <input id="mail" type="email" name="email" required />
+        </div>
+        <div class="login-form-phone">
+          <label for="phoneNumber">Phone Number</label>
+          <input id="phoneNumber" type="tel" name="phoneNumber" required />
+        </div>
+        <div class="login-form-password">
+          <label for="pwd">Password</label>
+          <input id="pwd" type="password" name="password" required />
+        </div>
+        <div class="login-form-password-confirm">
+          <label for="pwdConfirm">Confirm Password</label>
+          <input
+            id="pwdConfirm"
+            type="password"
+            name="passwordConfirm"
+            required
+          />
+        </div>
+      </form>
+    </div>
+
+    <div class="form-submit">
+      <button type="submit" form="loginForm">Create Account</button>
+    </div>
+
+    <p class="login-account">Already have an account? <a href="#">Log in</a></p>
+  </body>
+</html>
