@@ -7,53 +7,68 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 class="login-intro">
-      quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat
-      sed cras ornare arcu dui vivamus arcu felis bibendum
-    </h1>
-    <h1 class="login-intro">Sign up now to get started</h1>
+    <div class="right-side">
+      <h1>
+        quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat
+        sed cras ornare arcu dui vivamus arcu felis.
+      </h1>
+      <h1>Sign up <em>now</em> to get started.</h1>
 
-    <h1 class="login-intro">You know you want to.</h1>
+      <h1 class="login-intro">You <em>know</em> you want to.</h1>
 
-    <div class="form-section">
-      <h1 class="login-form-title">Let's do this!</h1>
-      <form id="loginForm" class="login-form">
+      <form id="login-form" class="login-form">
+        <h1 class="login-form-title">Let's do this!</h1>
         <div class="login-form-firstname">
-          <label for="firstName">First Name</label>
-          <input id="firstName" type="text" name="firstName" required />
+          <label for="first-name">First Name</label>
+          <input id="first-name" type="text" name="first-name" required />
         </div>
         <div class="login-form-lastname">
-          <label for="lastName">Last Name</label>
-          <input id="lastName" type="text" name="lastName" required />
+          <label for="last-name">Last Name</label>
+          <input
+            id="last-name"
+            type="text"
+            name="last-name"
+            value=""
+            required
+          />
         </div>
         <div class="login-form-email">
           <label for="mail">Email</label>
-          <input id="mail" type="email" name="email" required />
+          <input id="mail" type="email" name="email" value="" required />
         </div>
         <div class="login-form-phone">
-          <label for="phoneNumber">Phone Number</label>
-          <input id="phoneNumber" type="tel" name="phoneNumber" required />
+          <label for="phone-number">Phone Number</label>
+          <input
+            id="phone-number"
+            type="tel"
+            name="phone-number"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="xxx-xxx-xxxx"
+            required
+          />
         </div>
         <div class="login-form-password">
           <label for="pwd">Password</label>
           <input id="pwd" type="password" name="password" required />
         </div>
         <div class="login-form-password-confirm">
-          <label for="pwdConfirm">Confirm Password</label>
+          <label for="password-confirm">Confirm Password</label>
           <input
-            id="pwdConfirm"
+            id="password-confirm"
             type="password"
-            name="passwordConfirm"
+            name="password-confirm"
             required
           />
         </div>
       </form>
-    </div>
 
-    <div class="form-submit">
-      <button type="submit" form="loginForm">Create Account</button>
-    </div>
+      <div class="form-submit">
+        <button type="submit" form="login-form">Create Account</button>
+      </div>
 
-    <p class="login-account">Already have an account? <a href="#">Log in</a></p>
+      <div class="login-account">
+        Already have an account? <a href="#">Log in</a>
+      </div>
+    </div>
   </body>
 </html>
