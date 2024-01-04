@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.right-side {
+  font-family: Helvetica, Arial,  sans-serif;
+  font-size: 16px;
+  background-color: #f9fafb;
+
+  width: 960px;
+  margin-top: 100px;
+  padding-left: 50px;
+}
+
+.login-intro {
+  padding: 50px 0 100px 0;
+}
+
+.login-form {
+  background-color: #ffffff;
+  
+}
+
+
+
+
+input:focus:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+  
+input:valid {
+    box-shadow: none;
+  }
+
+input:invalid {
+    box-shadow: none;
+}
+
+
+
+/* 
+400px = mobile
+401 - 960px = tablet
+961px = desktop
+*/
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  
+}
