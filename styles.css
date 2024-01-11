@@ -1,23 +1,35 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
   box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(249, 250, 251);
 }
 
 .right-side {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.3;
-  background-color: #f9fafb;
 
-  width: 100%;
-  height: 100vh;
   margin-top: 100px;
-  padding: 20px;
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.form-wrapper {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.right-side h1 {
+  text-align: center;
 }
 
 .login-intro {
@@ -25,12 +37,12 @@
 }
 
 .login-form {
-  background-color: rgb(175, 175, 230);
   border: 1px solid #d6d9dc;
   border-radius: 3px;
 
   width: 80%;
-  padding: 30px;
+  margin: 0 auto;
+  border: none;
 }
 
 .login-form h1 {
@@ -39,35 +51,56 @@
 
 .form-control {
   margin-bottom: 40px;
-  display: flex;
+  /*   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 
-.form-control input[type] {
+.form-control input {
   background-color: #ffffff;
   border: 1px solid #d6d9dc;
   border-radius: 3px;
   width: 100%;
   padding: 5px;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .form-control label {
+  font-size: 1rem;
   margin-bottom: 10px;
+  display: block;
 }
 
-input:focus:invalid {
-  box-shadow: 0 0 5px 1px red;
+.form-control button {
+  font-size: 1rem;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+
+  padding: 20px 70px;
+  cursor: pointer;
 }
 
-input:valid {
-  box-shadow: none;
+.form-control button:hover {
+  background-color: #76aeed;
 }
 
-input:invalid {
-  box-shadow: none;
+.form-control button:active {
+  background-color: #407fc7;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+  border-color: green;
 }
 
 /* 
@@ -82,10 +115,51 @@ input:invalid {
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  .right-side {
+  .form-control input {
+    height: initial;
+  }
+  .form-control {
+    flex-direction: row;
+    align-items: flex-start; /* To avoid stretching */
+    margin-bottom: 20px;
+  }
+  .form-control label {
+    width: 250px;
+    margin-top: 7px;
+    padding-right: 20px;
   }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+  .login-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .form-control {
+    position: relative;
+    min-height: 1px;
+    padding: 15px;
+    width: 50%;
+    flex: 0 0 100%;
+    max-width: 40%;
+  }
+
+  .form-control input {
+    width: 250px;
+    height: initial;
+  }
+  .form-control {
+    flex-direction: row;
+    align-items: flex-start; /* To avoid stretching */
+    margin-bottom: 20px;
+  }
+  .form-control label {
+    width: 250px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
 }

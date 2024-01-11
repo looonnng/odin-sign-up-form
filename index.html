@@ -15,51 +15,74 @@
       <h1>Sign up <em>now</em> to get started.</h1>
 
       <h1 class="login-intro">You <em>know</em> you want to.</h1>
-      <form id="login-form" class="login-form">
+      <div class="form-wrapper">
         <h1>Let's do this!</h1>
-        <div class="form-control">
-          <label for="first-name">First Name</label>
-          <input id="first-name" type="text" name="first-name" required />
-        </div>
-        <div class="form-control">
-          <label for="last-name">Last Name</label>
-          <input
-            id="last-name"
-            type="text"
-            name="last-name"
-            value=""
-            required
-          />
-        </div>
-        <div class="form-control">
-          <label for="mail">Email</label>
-          <input id="mail" type="email" name="email" value="" required />
-        </div>
-        <div class="form-control">
-          <label for="phone-number">Phone Number</label>
-          <input
-            id="phone-number"
-            type="tel"
-            name="phone-number"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            placeholder="xxx-xxx-xxxx"
-            required
-          />
-        </div>
-        <div class="form-control">
-          <label for="pwd">Password</label>
-          <input id="pwd" type="password" name="password" required />
-        </div>
-        <div class="form-control">
-          <label for="password-confirm">Confirm Password</label>
-          <input
-            id="password-confirm"
-            type="password"
-            name="password-confirm"
-            required
-          />
-        </div>
-      </form>
+        <form id="login-form" class="login-form">
+          <div class="form-control">
+            <label for="first-name">First Name</label>
+            <input
+              id="first-name"
+              type="text"
+              name="first-name"
+              placeholder=" "
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="last-name">Last Name</label>
+            <input
+              id="last-name"
+              type="text"
+              name="last-name"
+              value=""
+              placeholder=" "
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="mail">Email</label>
+            <input
+              id="mail"
+              type="email"
+              name="email"
+              value=""
+              placeholder=" "
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="phone-number">Phone Number</label>
+            <input
+              id="phone-number"
+              type="tel"
+              name="phone-number"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="xxx-xxx-xxxx"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="pwd">Password</label>
+            <input
+              id="pwd"
+              type="password"
+              name="password"
+              placeholder=" "
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="password-confirm">Confirm Password</label>
+            <input
+              id="password-confirm"
+              type="password"
+              name="password-confirm"
+              placeholder=" "
+              required
+            />
+          </div>
+        </form>
+      </div>
 
       <div class="form-control">
         <button type="submit" form="login-form">Create Account</button>
