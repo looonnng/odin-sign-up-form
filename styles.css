@@ -76,6 +76,7 @@ body {
 
 .login {
   padding-left: 3rem;
+  padding-top: 1rem;
 }
 
 .form-control button {
@@ -86,6 +87,7 @@ body {
   background-color: #5995da;
 
   margin-top: 20px;
+  margin-bottom: 2rem;
   border: none;
   border-radius: 10px;
 
@@ -160,7 +162,6 @@ input:not(:focus):not(:placeholder-shown):valid {
   .form-control {
     flex-direction: row;
     align-items: flex-start; /* To avoid stretching */
-    margin-bottom: 20px;
   }
   .form-control label {
     width: 250px;
