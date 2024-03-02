@@ -20,16 +20,20 @@ body {
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.right-side > h1 {
+  padding-left: 3rem;
 }
 
 .form-wrapper {
   background-color: #ffffff;
   width: 100%;
+  padding: 1rem 0 1rem 3rem;
 }
 
-.right-side h1 {
-  text-align: center;
+.form-wrapper h1 {
+  padding-bottom: 1rem;
 }
 
 .login-intro {
@@ -41,7 +45,6 @@ body {
   border-radius: 3px;
 
   width: 80%;
-  margin: 0 auto;
   border: none;
 }
 
@@ -68,8 +71,11 @@ body {
 
 .form-control label {
   font-size: 1rem;
-  margin-bottom: 10px;
   display: block;
+}
+
+.login {
+  padding-left: 3rem;
 }
 
 .form-control button {
@@ -142,7 +148,6 @@ input:not(:focus):not(:placeholder-shown):valid {
   .form-control {
     position: relative;
     min-height: 1px;
-    padding: 15px;
     width: 50%;
     flex: 0 0 100%;
     max-width: 40%;
