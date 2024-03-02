@@ -24,12 +24,13 @@ body {
 
 .right-side > h1 {
   padding-left: 3rem;
+  width: 80%;
 }
 
 .form-wrapper {
   background-color: #ffffff;
   width: 100%;
-  padding: 1rem 0 1rem 3rem;
+  padding: 2rem 0 2rem 3rem;
 }
 
 .form-wrapper h1 {
@@ -46,19 +47,18 @@ body {
 
   width: 80%;
   border: none;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 
 .login-form h1 {
   margin: 10px 0;
 }
 
-.form-control {
-  margin-bottom: 40px;
-  /*   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap; */
-}
+
 
 .form-control input {
   background-color: #ffffff;
@@ -156,7 +156,7 @@ input:not(:focus):not(:placeholder-shown):valid {
   }
 
   .form-control input {
-    width: 250px;
+    max-width: 400px;
     height: initial;
   }
   .form-control {
